@@ -1,0 +1,12 @@
+{
+  "presets": [["es2015", {"modules": false}], "react"],
+  "plugins": ["async-to-promises", "transform-object-rest-spread"],
+  "env": {
+    "dev": {
+      "presets": ["react-hmre"]
+    },
+    "test": {
+      "presets": ["es2015"]
+    }
+  }
+}
