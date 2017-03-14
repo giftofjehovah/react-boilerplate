@@ -28,6 +28,10 @@ Run test coverage
 ```
 yarn cov
 ```
+Run lint test for JS files
+```
+yarn lint
+```
 
 Build project for production
 ```
