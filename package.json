@@ -8,6 +8,7 @@
     "dev": "BABEL_ENV=dev webpack-dev-server --hot --inline --watch --host 0.0.0.0",
     "build": "jest && webpack -p --progress --env=prod",
     "test": "yarn lint && jest",
+    "test:dev": "jest",
     "test:watch": "npm test -- --watch",
     "cov": "jest --coverage",
     "lint": "eslint src"
