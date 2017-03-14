@@ -1,4 +1,4 @@
-# UOB Forms [![CircleCI](https://circleci.com/gh/paloitsingapore/uob-forms.svg?style=svg)](https://circleci.com/gh/paloitsingapore/uob-forms)
+# UOB Forms [![CircleCI](https://circleci.com/gh/paloitsingapore/uob-forms.svg?style=svg&circle-token=f526bf07566a2bd2820ea8fdc875674960cd1821)](https://circleci.com/gh/paloitsingapore/uob-forms)
 This is the project repository for UOB Forms.
 
 ## Project Set up
