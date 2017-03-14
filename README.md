@@ -16,7 +16,7 @@ yarn dev
 
 Run tests with
 ```
-yarn test
+yarn test:dev
 ```
 
 You run tests on folder changes too
@@ -28,6 +28,7 @@ Run test coverage
 ```
 yarn cov
 ```
+
 Run lint test for JS files
 ```
 yarn lint
