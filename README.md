@@ -14,14 +14,19 @@ Run project with dev server
 yarn dev
 ```
 
-Run Tests with
+Run tests with
 ```
 yarn test
 ```
 
-You can watch folder changes and run tests too
+You run tests on folder changes too
 ```
 yarn test:watch
+```
+
+Run test coverage
+```
+yarn cov
 ```
 
 Build project for production
