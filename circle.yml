@@ -21,4 +21,5 @@ deployment:
     commands:
       - yarn build
       - zip -r build.zip dist
-      - mv build.zip {$CIRCLE_ARTIFACTS}
+      - ls
+      - mv build.zip $CIRCLE_ARTIFACTS
