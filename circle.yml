@@ -15,11 +15,15 @@ test:
   override:
     - yarn test
 
+
 deployment:
   aws:
     branch: demo
     commands:
       - yarn build
       - zip -r build.zip dist
-      - mv build.zip $CIRCLE_ARTIFACTS
-      - aws s3 sync $CIRCLE_ARTIFACTS/build.zip s3://ap-southeast-1/uob-forms
+      - aws s3 sync build.zip s3://uob-forms
+
+general:
+  artifacts:
+    - "~/dist"
