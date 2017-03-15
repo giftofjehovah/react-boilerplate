@@ -15,7 +15,6 @@ test:
   override:
     - yarn test
 
-
 deployment:
   aws:
     branch: demo
@@ -26,4 +25,4 @@ deployment:
 
 general:
   artifacts:
-    - "~/dist"
+    - "~/build.zip"
