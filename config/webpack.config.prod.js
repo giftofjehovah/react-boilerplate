@@ -4,9 +4,10 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const path = require('path')
 
 // paths
-const buildPath = path.join(__dirname, 'dist')
-const srcPath = path.join(__dirname, 'src')
-const publicPath = path.join(__dirname, 'public')
+const root = path.resolve(__dirname, '..')
+const buildPath = path.resolve(root, 'dist')
+const srcPath = path.resolve(root, 'src')
+const publicPath = path.resolve(srcPath, 'public')
 const htmlPath = `${publicPath}/index.html`
 const indexPath = `${srcPath}/index.js`
 
