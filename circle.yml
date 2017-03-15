@@ -21,5 +21,5 @@ deployment:
     commands:
       - yarn build
       - zip -r build.zip dist
-      - ls
       - mv build.zip $CIRCLE_ARTIFACTS
+      - aws s3 sync build.zip s3://ap-southeast-1/uob-forms
