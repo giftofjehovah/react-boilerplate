@@ -15,11 +15,27 @@ test:
   override:
     - yarn test
 
+# deployment:
+#   aws:
+#     branch: demo
+#     commands:
+#       - yarn build
+#       - zip -r build.zip dist
+#       - cp build.zip $CIRCLE_ARTIFACTS
+#       - aws s3 cp build.zip s3://uobforms
 deployment:
-  aws:
+  staging:
     branch: demo
     commands:
       - yarn build
-      - zip -r build.zip dist
-      - cp build.zip $CIRCLE_ARTIFACTS
-      - aws s3 cp build.zip s3://uobforms
+      - cp appspec.yml ./dist
+    codedeploy:
+      appname-1234:
+        application_root: /dist
+        region: ap-southeast-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: uobforms
+            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: UOBDeploymentGroup
