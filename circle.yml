@@ -22,4 +22,4 @@ deployment:
       - yarn build
       - zip -r build.zip dist
       - cp build.zip $CIRCLE_ARTIFACTS
-      - aws s3 sync build.zip s3://uobforms
+      - aws s3 cp build.zip s3://uobforms
