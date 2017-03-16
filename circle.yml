@@ -30,7 +30,7 @@ deployment:
   staging:
     branch: demo
     codedeploy:
-      appname-1234:
+      UOBCodeDeploy:
         application_root: /dist
         region: ap-southeast-1
         revision_location:
