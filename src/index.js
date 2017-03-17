@@ -3,7 +3,7 @@ import {render} from 'react-dom'
 
 const app = document.querySelector('#app')
 render(
-  <div>Hello</div>,
+  <div>Hello World!!</div>,
   app
 )
 
