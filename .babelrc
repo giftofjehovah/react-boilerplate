@@ -1,6 +1,6 @@
 {
   "presets": [["es2015", {"modules": false}], "react"],
-  "plugins": ["async-to-promises", "transform-object-rest-spread"],
+  "plugins": ["transform-async-to-generator", "transform-object-rest-spread"],
   "env": {
     "dev": {
       "presets": ["react-hmre"]
