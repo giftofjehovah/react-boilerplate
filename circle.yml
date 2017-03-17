@@ -37,5 +37,5 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: uobforms
-            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
+            key_pattern: uobforms-{BRANCH}-{SHORT_COMMIT}-{BUILD_NUM}
         deployment_group: UOBDeploymentGroup
